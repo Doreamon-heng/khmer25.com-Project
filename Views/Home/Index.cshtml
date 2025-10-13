@@ -2,6 +2,11 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-    
+<div class="container-fluid">
+    <div class="container">
+        @await Html.PartialAsync("partials/Banner")
+        @await Html.PartialAsync("partials/Category")
+        @await Html.PartialAsync("partials/CategoryList")
+        @await Html.PartialAsync("partials/NewProducts")
+    </div>
 </div>

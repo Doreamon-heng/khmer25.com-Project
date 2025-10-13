@@ -5,56 +5,154 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - khmer25.com_project</title>
-    <script type="importmap"></script>
+
+    <!-- Bootstrap + Icons -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
 
-    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/khmer25.com_project.styles.css" asp-append-version="true" />
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Sidebar styles */
+        .side-bar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            /* Hidden initially */
+            width: 250px;
+            height: 100%;
+            background-color: #343a40;
+            color: white;
+            transition: left 0.3s ease;
+            z-index: 1050;
+            padding-top: 60px;
+        }
+
+        .side-bar.active {
+            left: 0;
+        }
+
+        .side-bar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px 20px;
+            transition: background 0.2s;
+        }
+
+        .side-bar a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Overlay (background dim when sidebar open) */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1040;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container d-flex justify-content-between align-items-center">
+
+                <!-- Logo -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Logo</a>
+
+                <!-- Search box -->
                 <div class="input-group" style="max-width: 200px;">
                     <span class="input-group-text bg-white border-end-0">
                         <i class="bi bi-search"></i>
                     </span>
                     <input type="text" class="form-control border-start-0" placeholder="Search item..." />
                 </div>
+                <!-- Menu icon -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#"><i class="bi bi-cart fs-3 text-muted"></i></a>
+                    <a href="#"><i class="bi bi-people fs-3 text-muted"></i></a>
 
-                <ul class="list-unstyled d-flex mb-0 ">
-                    <li class="d-flex align-items-center gap-3">
-                        <a href=""><i class="bi bi-cart fs-3 text-muted"></i></a>
-                        <a href=""><i class="bi bi-people fs-3 text-muted"></i></a>
-                    </li>
-                </ul>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- ✅ Menu Button  -->
+                    <button id="menu-btn" class="btn btn-outline-secondary">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
         </nav>
+
+        <!-- ✅ Sidebar -->
+        <div class="side-bar" id="sidebar">
+            <h4 class="text-center mb-4">Menu</h4>
+            <a asp-controller="Home" asp-action="Index"> <i class="bi bi-person"></i> Profile</a>
+            <a href="#"> <i class="bi bi-heart"></i> Favorites</a>
+            <a href="#"> <i class="bi bi-truck"></i> Delivery Info</a>
+            <a href="#"> <i class="bi bi-clock"></i> Order History</a>
+            <a href="#"> <i class="bi bi-envelope"></i> Contact Us</a>
+            <a href="#"> <i class="bi bi-share"></i> Invite Friends</a>
+            <a href="#"> <i class="bi bi-box-arrow-in-right"></i> Sign In</a>
+
+            <div class="btn-group d-flex justify-content-center m-4 " role="group" aria-label="Language switcher">
+                <button type="button" class="btn btn-outline-light active">EN</button>
+                <button type="button" class="btn btn-outline-light">KH</button>
+                
+            </div>
+        </div>
+
+        <!-- ✅ Overlay -->
+        <div class="overlay" id="overlay"></div>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - khmer25.com_project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - khmer25.com_project -
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <!-- JS -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- ✅ Sidebar Toggle Script -->
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+        const menuBtn = document.getElementById("menu-btn");
+
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
