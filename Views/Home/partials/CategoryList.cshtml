@@ -10,17 +10,28 @@
     <style>
         .category-box {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            border-radius: 50px;
         }
 
         .category-box img {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: auto;
             object-fit: cover;
-            border-radius: 15px;
+            border-radius: 50px;
             margin-bottom: 10px;
+            cursor: pointer;
         }
+        .category-box:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            img:hover{
+                transform: scale(1.05);
+            transition: transform 0.3s;
 
+            }
+        }
         .category-title {
             font-weight: bold;
         }
