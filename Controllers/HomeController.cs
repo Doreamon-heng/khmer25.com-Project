@@ -17,6 +17,9 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Category() => View("page/Category");
+    public IActionResult NewProducts() => View("page/NewProducts");
+    public IActionResult Promotion() => View("page/Promotion");
     public IActionResult Cart() => View("page/Cart");
     public IActionResult Profile() => View("components/Profile");
     public IActionResult Favorite() => View("components/Favorite");

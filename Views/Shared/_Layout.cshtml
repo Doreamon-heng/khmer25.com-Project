@@ -77,6 +77,20 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Logo</a>
+                <ul class="navbar-nav d-lg-flex d-sm-none d-md-none d-none flex-row gap-3 mb-0 text-align-center">
+                    <li>
+                        <a class="text-decoration-none text-secondary" asp-controller="Home" asp-action="Index"> <i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none text-secondary" asp-controller="Home" asp-action="Category"> <i class="bi bi-ui-checks-grid"></i> Category</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none text-secondary" asp-controller="Home" asp-action="Promotion"> <i class="bi bi-percent"></i> Promotion</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none text-secondary" asp-controller="Home" asp-action="NewProducts"> <i class="bi bi-megaphone"></i> New Products</a>
+                    </li>
+                </ul>
 
                 <!-- Search box -->
                 <div class="input-group" style="max-width: 200px;">

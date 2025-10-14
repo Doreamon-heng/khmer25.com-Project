@@ -64,6 +64,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYWdlXENhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/clone git testing/khmer25.com-Project/Views/Home/page/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYWdlXENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/clone git testing/khmer25.com-Project/Views/Home/page/NewProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYWdlXE5ld1Byb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/clone git testing/khmer25.com-Project/Views/Home/page/Promotion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYWdlXFByb21vdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/clone git testing/khmer25.com-Project/Views/Home/partials/Banner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYXJ0aWFsc1xCYW5uZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/clone git testing/khmer25.com-Project/Views/Home/partials/NewProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYXJ0aWFsc1xOZXdQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/clone git testing/khmer25.com-Project/Views/Home/partials/Promote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYXJ0aWFsc1xQcm9tb3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/clone git testing/khmer25.com-Project/Views/Shared/Error.cshtml]
