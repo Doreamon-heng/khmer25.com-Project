@@ -17,12 +17,17 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Cart() => View("page/Cart");
+    public IActionResult Profile() => View("components/Profile");
+    public IActionResult Favorite() => View("components/Favorite");
+    public IActionResult Delivery() => View("components/Delivery");
+    public IActionResult Order() => View("components/Order");
+    public IActionResult Contact() => View("components/Contact");
+    public IActionResult InviteFriend() => View("components/InviteFriend");
+    public IActionResult SignIn() => View("components/SignIn");
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-    
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

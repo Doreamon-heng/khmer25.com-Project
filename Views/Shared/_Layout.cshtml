@@ -67,7 +67,6 @@
         .overlay.active {
             display: block;
         }
-        
     </style>
 </head>
 
@@ -88,8 +87,8 @@
                 </div>
                 <!-- Menu icon -->
                 <div class="d-flex align-items-center gap-3">
-                    <a href="#"><i class="bi bi-cart fs-3 text-muted"></i></a>
-                    <a href="#"><i class="bi bi-people fs-3 text-muted"></i></a>
+                    <a asp-controller="Home" asp-action="Cart"><i class="bi bi-cart fs-3 text-muted"></i></a>
+                    <a asp-controller="Home" asp-action="InviteFriend"><i class="bi bi-people fs-3 text-muted"></i></a>
 
                     <!-- ✅ Menu Button  -->
                     <button id="menu-btn" class="btn btn-outline-secondary">
@@ -102,18 +101,39 @@
         <!-- ✅ Sidebar -->
         <div class="side-bar" id="sidebar">
             <h4 class="text-center mb-4">Menu</h4>
-            <a asp-controller="Home" asp-action="Index"> <i class="bi bi-person p-2"></i> Profile</a>
-            <a href="#"> <i class="bi bi-heart p-2"></i> Favorites</a>
-            <a href="#"> <i class="bi bi-truck p-2"></i> Delivery Info</a>
-            <a href="#"> <i class="bi bi-clock p-2"></i> Order History</a>
-            <a href="#"> <i class="bi bi-envelope p-2"></i> Contact Us</a>
-            <a href="#"> <i class="bi bi-share p-2"></i> Invite Friends</a>
-            <a href="#"> <i class="bi bi-box-arrow-in-right p-2"></i> Sign In</a>
+            <a asp-controller="Home" asp-action="Profile">
+                <i class="bi bi-person p-2"></i> Profile
+            </a>
+
+            <a asp-controller="Home" asp-action="Favorite">
+                <i class="bi bi-heart p-2"></i> Favorites
+            </a>
+
+            <a asp-controller="Home" asp-action="Delivery">
+                <i class="bi bi-truck p-2"></i> Delivery Info
+            </a>
+
+            <a asp-controller="Home" asp-action="Order">
+                <i class="bi bi-clock p-2"></i> Order History
+            </a>
+
+            <a asp-controller="Home" asp-action="Contact">
+                <i class="bi bi-envelope p-2"></i> Contact Us
+            </a>
+
+            <a asp-controller="Home" asp-action="InviteFriend">
+                <i class="bi bi-share p-2"></i> Invite Friends
+            </a>
+
+            <a asp-controller="Home" asp-action="SignIn">
+                <i class="bi bi-box-arrow-in-right p-2"></i> Sign In
+            </a>
+
 
             <div class="btn-group d-flex justify-content-center m-4 " role="group" aria-label="Language switcher">
                 <button type="button" class="btn btn-outline-light active">EN</button>
                 <button type="button" class="btn btn-outline-light">KH</button>
-                
+
             </div>
         </div>
 
