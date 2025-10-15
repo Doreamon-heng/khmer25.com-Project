@@ -74,10 +74,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container d-flex justify-content-between align-items-center">
-
                 <!-- Logo -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Logo</a>
-                <ul class="navbar-nav d-lg-flex d-sm-none d-md-none d-none flex-row gap-3 mb-0 text-align-center">
+                <ul class="navbar-nav d-lg-flex d-sm-none d-md-none d-none flex-row gap-5 mb-0 text-align-center">
                     <li>
                         <a class="text-decoration-none text-secondary" asp-controller="Home" asp-action="Index"> <i class="bi bi-house"></i> Home</a>
                     </li>
@@ -93,14 +92,20 @@
                 </ul>
 
                 <!-- Search box -->
-                <div class="input-group" style="max-width: 200px;">
+                <div class="input-group d-none d-md-flex" style="max-width: 200px;">
                     <span class="input-group-text bg-white border-end-0">
                         <i class="bi bi-search"></i>
                     </span>
                     <input type="text" class="form-control border-start-0" placeholder="Search item..." />
                 </div>
+                
                 <!-- Menu icon -->
                 <div class="d-flex align-items-center gap-3">
+                <span class=" d-md-none ">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </span>
                     <a asp-controller="Home" asp-action="Cart"><i class="bi bi-cart fs-3 text-muted"></i></a>
                     <a asp-controller="Home" asp-action="InviteFriend"><i class="bi bi-people fs-3 text-muted"></i></a>
 
