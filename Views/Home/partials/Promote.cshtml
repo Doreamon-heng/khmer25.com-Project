@@ -1,83 +1,104 @@
-<div cLass="my-5">
-    <h3>Promotion (%)</h3>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container ">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .card {
+        border: none;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+    }
+
+    .card-box {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      
+    }
+
+    .card-box img:hover {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+    }
+
+    .card-discount {
+        z-index: 1;
+    }
+
+    .card-discount p {
+        font-size: 0.9rem;
+    }
+</style>
+
+<body>
+    <div class="my-5">
+        <h3>Promotion (%)</h3>
+    </div>
+
+    <div class="container">
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card ">
-                <div class="card-box">
-                    <img src="" alt="">
+            <div class="card rounded shadow position-relative">
+
+                <!-- View Details Icon -->
+                <div class="view-details position-absolute top-0 end-0 m-2 z-1">
+                    <i class="bi bi-eye"></i>
                 </div>
+
+                <!-- Discount Badge -->
+                <div class="card-discount position-absolute top-0 start-0 m-2">
+                    <p class="bg-danger rounded-pill px-2 py-1 text-white mb-0">
+                        <i class="bi bi-tag me-1 fs-7"></i>30%
+                    </p>
+                </div>
+
+                <!-- Card Image -->
+                <div class="card-box overflow-hidden rounded p-3 overflow-hidden rounded p-3 ">
+                    <img src="~/assets/banner-2.jpg" alt="Fresh Vegetable" class="img-fluid w-100 h-100">
+                </div>
+
+                <!-- Card Body -->
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
+                    <p class="mb-1 text-muted">Vegetable</p>
+                    <p class="card-text fw-semibold">Fresh Vegetable</p>
+                    <p class="text-danger fw-bold d-flex justify-content-between mb-0">
+                        $20.00 
+                        <span class="text-decoration-line-through text-secondary">$30.00</span>
+                    </p>
                 </div>
-            </div>
-        </div>
-         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card ">
-                <div class="card-box">
-                    <img src="" alt="">
+
+                <!-- Card Footer -->
+                <div class="card-footer">
+                    <small>per Kg</small>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card ">
-                <div class="card-box">
-                    <img src="" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card ">
-                <div class="card-box">
-                    <img src="" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card ">
-                <div class="card-box">
-                    <img src="" alt="">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+</body>
+
+</html>
