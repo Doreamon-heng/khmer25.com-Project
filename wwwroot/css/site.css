@@ -1,6 +1,10 @@
 html {
   font-size: 14px;
 }
+body {
+    font-family: 'Hanuman', 'Koh Santepheap', 'Roboto', 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
+  }
 
 @media (min-width: 768px) {
   html {

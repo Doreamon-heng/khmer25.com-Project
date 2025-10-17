@@ -3,11 +3,41 @@
 }
 
 <div class="container-fluid">
-    <div class="container">
-        @await Html.PartialAsync("partials/Banner")
+    <div class="container" style="margin-top: 10px;">
+        <div id="banner">
+            @await Html.PartialAsync("partials/Banner")
+        </div>
+
         @await Html.PartialAsync("partials/Category")
         @await Html.PartialAsync("partials/CategoryList")
         @await Html.PartialAsync("partials/NewProducts")
+        @await Html.PartialAsync("partials/Banner02")
         @await Html.PartialAsync("partials/Promote")
     </div>
+    <div class="position-fixed bottom-0 end-0 p-4">
+        <a id="scrollBtn" class="text-success" style="display: none; cursor: pointer;">
+            <i class="bi bi-arrow-up-circle fs-1"></i>
+        </a>
+    </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scrollBtn = document.getElementById("scrollBtn");
+        const banner = document.getElementById("banner");
+        scrollBtn.addEventListener("click", function() {
+            if (banner) {
+                banner.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+        window.addEventListener("scroll", function() {
+            if (!banner) return;
+
+            const bannerBottom = banner.getBoundingClientRect().bottom;
+            if (bannerBottom > 0) {
+                scrollBtn.style.display = "none";
+            } else {
+                scrollBtn.style.display = "block";
+            }
+        });
+    });
+</script>

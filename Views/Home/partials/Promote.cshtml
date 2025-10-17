@@ -17,7 +17,7 @@
     .card:hover {
         transform: translateY(-10px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        
+
     }
 
     .card-box {
@@ -35,7 +35,7 @@
         height: 100%;
         object-fit: cover;
         transition: transform 0.3s ease;
-      
+
     }
 
     .card-box img:hover {
@@ -54,50 +54,48 @@
 
 <body>
     <div class="my-5">
-        <h3>Promotion (%)</h3>
+        <h3>ការបញ្ចុះតម្លៃ (%)</h3>
     </div>
 
     <div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-            <div class="card rounded shadow position-relative">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card rounded shadow position-relative">
 
-                <!-- View Details Icon -->
-                <div class="view-details position-absolute top-0 end-0 m-2 z-1">
-                    <i class="bi bi-eye"></i>
+                    <!-- Discount Badge -->
+                    <div class="card-discount position-absolute top-0 start-0 m-2">
+                        <p class="bg-danger rounded-pill px-2 py-1 text-white mb-0">
+                            <i class="bi bi-tag me-1 fs-7"></i>30%
+                        </p>
+                    </div>
+
+                    <!-- Card Image -->
+                    <div class="card-box  p-2">
+                        <div class="card-box-img  overflow-hidden rounded " style="width: 95%; height: 100%;">
+                            <img src="~/assets/banner-2.jpg" alt="Fresh Vegetable" class="img-fluid bs-cover w-100 h-100">
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <p class="mb-1 text-muted">បន្លែ</p>
+                        <p class="card-text fw-semibold">បន្លែស្រស់ៗ</p>
+                        <p class="text-danger fw-bold d-flex justify-content-between mb-0">
+                            $20.00
+                            <span class="text-decoration-line-through text-secondary">$30.00</span>
+                        </p>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="card-footer">
+                        <small>ក្នុង​មួយគីឡូ</small>
+                    </div>
+
                 </div>
-
-                <!-- Discount Badge -->
-                <div class="card-discount position-absolute top-0 start-0 m-2">
-                    <p class="bg-danger rounded-pill px-2 py-1 text-white mb-0">
-                        <i class="bi bi-tag me-1 fs-7"></i>30%
-                    </p>
-                </div>
-
-                <!-- Card Image -->
-                <div class="card-box overflow-hidden rounded p-3 overflow-hidden rounded p-3 ">
-                    <img src="~/assets/banner-2.jpg" alt="Fresh Vegetable" class="img-fluid w-100 h-100">
-                </div>
-
-                <!-- Card Body -->
-                <div class="card-body">
-                    <p class="mb-1 text-muted">Vegetable</p>
-                    <p class="card-text fw-semibold">Fresh Vegetable</p>
-                    <p class="text-danger fw-bold d-flex justify-content-between mb-0">
-                        $20.00 
-                        <span class="text-decoration-line-through text-secondary">$30.00</span>
-                    </p>
-                </div>
-
-                <!-- Card Footer -->
-                <div class="card-footer">
-                    <small>per Kg</small>
-                </div>
-
             </div>
         </div>
     </div>
-</div>
 
 </body>
 

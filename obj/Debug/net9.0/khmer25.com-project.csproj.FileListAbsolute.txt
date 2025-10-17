@@ -2726,7 +2726,6 @@ D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\rjsmcshtml.dswa.cache.
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\scopedcss\bundle\khmer25.com-project.styles.css
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\scopedcss\projectbundle\khmer25.com-project.bundle.scp.css
-D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\13ixfkctjp-b9sayid5wm.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\glq40sfc7n-61n19gt1b8.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\3yrlg4fu0k-xtxxf3hu2r.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\2acwievkmw-qagmcfajms.gz
@@ -4914,8 +4913,6 @@ D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\klyz9xqtta-
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\u1az4qybjq-9vr69e8ynj.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\y08p6bp8t1-87fc7y1x7t.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\dkpg66txng-mlv21k5csn.gz
-D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\2ir1qcrhrm-7qa5687rcl.gz
-D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\n8ln0bws86-7qa5687rcl.gz
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\staticwebassets.build.json
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\staticwebassets.development.json
@@ -4926,3 +4923,6 @@ D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\refint\khmer25.com-pro
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\khmer25.com-project.pdb
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\khmer25.com-project.genruntimeconfig.cache
 D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\ref\khmer25.com-project.dll
+D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\13ixfkctjp-vlhqucu05a.gz
+D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\2ir1qcrhrm-iek22g4qij.gz
+D:\clone git testing\khmer25.com-Project\obj\Debug\net9.0\compressed\n8ln0bws86-iek22g4qij.gz

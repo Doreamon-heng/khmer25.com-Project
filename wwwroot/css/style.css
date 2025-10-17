@@ -1,0 +1,35 @@
+.title-banner {
+    padding: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.title-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.title-banner h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 990px) {
+  .title-banner{
+    padding: 5px;
+  }
+   .title-banner h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .title-banner h4 {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .title-banner .shop-now-bt{
+    padding: 3px 5px;
+    font-size: 0.3rem;
+  }
+}
